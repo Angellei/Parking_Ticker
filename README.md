@@ -1,6 +1,6 @@
 # San Francisco Parking Ticket Model
 <p align="center">
-    <img src="https://www.resetsanfrancisco.org/wp-content/uploads/sites/47/2014/07/parking_ticket.png" alt="alternate text" width="500">
+    <img src="https://cdn-images-1.medium.com/max/1200/1*ug9H0FRrcE2LBVzZuSuM9Q.jpeg" alt="alternate text" width="500">
  </p>
  
 ## Motivation
