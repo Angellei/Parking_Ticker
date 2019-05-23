@@ -80,7 +80,7 @@ Feature Enginneering:
 Optimal:
 - The weekday dataset was trained using Linear regresssion, and got a RMSE of my model 475.54 compare to RMSE of benchmark 1485.78 within the standard devision of y_test 1490.47. My model outperform the baseline model, which means my model is better at predicting future values compare to no model at all.
 <p align="right">
-   <img src="Plots/RMSE.png" alt="alternate text", width="100">
+   <img src="Plots/RMSE.png" alt="alternate text", width="300">
 </p>
 
 - The dataset is large and modeling could be computationally expensive. So Amazon Web Services (AWS) was applied to achieve a more efficient processing (m5.4xlarge).
@@ -90,7 +90,7 @@ Optimal:
 - Used Epoches, Batch_size, Window_size, and Verbose as hyper-parameters
 - Optimized minimum RMSE (Root Mean Square Error) 
 <p align="center">
-   <img src="Plots/Daily LSTM.png" alt="alternate text", width="100">
+   <img src="Plots/Daily LSTM.png" alt="alternate text">
 </p>
 
 ## Future Work
