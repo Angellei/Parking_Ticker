@@ -52,7 +52,7 @@ First I did some exploratory analysis just to look for some interesting takeaway
 
 - The graph below shows chart of ticket rate by day of week. Seems like most people get caught off on the weekday, especially Friday.
 <p align="center">
-   <img src="Plots/Ticket_By_Week.png.png" alt="alternate text">
+   <img src="Plots/Ticket_By_Week.png" alt="alternate text">
 </p>
 
 - The graph below shows a huge gap between upper and lower distribution due to weekend and weekday success rate, so I decided to separate the data into two distributions: weekday and weekend to see if there's a linear relationship between each features.
@@ -80,7 +80,7 @@ Feature Enginneering:
 Optimal:
 - The weekday dataset was trained using Linear regresssion, and got a RMSE of my model 475.54 compare to RMSE of benchmark 1485.78 within the standard devision of y_test 1490.47. My model outperform the baseline model, which means my model is better at predicting future values compare to no model at all.
 <p align="right">
-   <img src="Plots/RMSE.png" alt="alternate text">
+   <img src="Plots/RMSE.png" alt="alternate text", width="100">
 </p>
 
 - The dataset is large and modeling could be computationally expensive. So Amazon Web Services (AWS) was applied to achieve a more efficient processing (m5.4xlarge).
@@ -90,7 +90,7 @@ Optimal:
 - Used Epoches, Batch_size, Window_size, and Verbose as hyper-parameters
 - Optimized minimum RMSE (Root Mean Square Error) 
 <p align="center">
-   <img src="Plots/Daily LSTM.png" alt="alternate text">
+   <img src="Plots/Daily LSTM.png" alt="alternate text", width="100">
 </p>
 
 ## Future Work
@@ -102,6 +102,6 @@ Interface:
 - Create a user interface
 - Add more data, maybe last four years data
 
-# About Me
+## About Me
 I'm Angel, a data scientist and an accountant. I love technology, mathematics, and using data to help businesses.
 For any questions/comments you can contact me via LinkedIn [Angel-LinkedIn](www.linkedin.com/in/angellei)
