@@ -76,10 +76,10 @@ Feature Enginneering:
 - Tested different features to include in the model, most of the features didn't contribute
     - Benchmark RMSE = 355.79
     - Model RMSE = 359.09
-  
+ 
 Optimal:
 - The weekday dataset was trained using Linear regresssion, and got a RMSE of my model 475.54 compare to RMSE of benchmark 1485.78 within the standard devision of y_test 1490.47. My model outperform the baseline model, which means my model is better at predicting future values compare to no model at all.
-<p align="right">
+<p align="center">
    <img src="Plots/RMSE.png" alt="alternate text", width="300">
 </p>
 
