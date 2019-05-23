@@ -52,35 +52,35 @@ First I did some exploratory analysis just to look for some interesting takeaway
 
 - The graph below shows chart of ticket rate by day of week. Seems like most people get caught off on the weekday, especially Friday.
 <p align="center">
-   <img src="Plot/Ticket_By_Week.png.png" alt="alternate text">
+   <img src="Plots/Ticket_By_Week.png.png" alt="alternate text">
 </p>
 
 - The graph below shows a huge gap between upper and lower distribution due to weekend and weekday success rate, so I decided to separate the data into two distributions: weekday and weekend to see if there's a linear relationship between each features.
 <p align="center">
-   <img src="Plot/Linear_Regression_Model.png" alt="alternate text">
+   <img src="Plots/Linear_Regression_Model.png" alt="alternate text">
 </p>
 
 - The graph below shows a weekend success rate - a lower distribution of the Linear Regression Model. The regression line fits well with this distribution
 <p align="center">
-   <img src="Plot/Lower Distribution Linear Regression Model.png" alt="alternate text">
+   <img src="Plots/Lower Distribution Linear Regression Model.png" alt="alternate text">
 </p>
 
 - The graph below shows a weekday success rate - a upper distibution of the Linear Regression Model. Weekday tend to have higher success rate, and thus more parking ticket. 
 <p align="center">
-   <img src="Plot/Upper Distribution Linear Regression Model.png" alt="alternate text">
+   <img src="Plots/Upper Distribution Linear Regression Model.png" alt="alternate text">
 </p>
 
 ## Modeling with weekday success rate
 ### Linear Regression Model
 Feature Enginneering:
 - Tested different features to include in the model, most of the features didn't contribute
-    - Benchmark RMSE = 
-    - Model RMSE = 
+    - Benchmark RMSE = 355.79
+    - Model RMSE = 359.09
   
 Optimal:
 - The weekday dataset was trained using Linear regresssion, and got a RMSE of my model 475.54 compare to RMSE of benchmark 1485.78 within the standard devision of y_test 1490.47. My model outperform the baseline model, which means my model is better at predicting future values compare to no model at all.
 <p align="right">
-   <img src="Plot/RMSE.png" alt="alternate text">
+   <img src="Plots/RMSE.png" alt="alternate text">
 </p>
 
 - The dataset is large and modeling could be computationally expensive. So Amazon Web Services (AWS) was applied to achieve a more efficient processing (m5.4xlarge).
@@ -88,9 +88,9 @@ Optimal:
 ### LSTM(time series) Model
 - Utilized entire data set (number of parking tickets from past two years since 2016) splited into training and test dataset. Used training set to fit the LSTM model, and used test set to predict next day’s total number of parking ticket in San Francisco. 
 - Used Epoches, Batch_size, Window_size, and Verbose as hyper-parameters
-- Optimized minimum RMSE (Root Mean Square Error) score 
+- Optimized minimum RMSE (Root Mean Square Error) 
 <p align="center">
-   <img src="Plot/Daily LSTM.png" alt="alternate text">
+   <img src="Plots/Daily LSTM.png" alt="alternate text">
 </p>
 
 ## Future Work
